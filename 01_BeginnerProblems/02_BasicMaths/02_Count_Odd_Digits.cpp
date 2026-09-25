@@ -1,17 +1,19 @@
-// URL: Not available
+// URL: https://takeuforward.org/practice/dsa/count-number-of-odd-digits-in-a-number
 
-#include <bits/stdc++.h> 
+class Solution {
+public:
 
-int optimal(long long num) {
-    int count = 0;
-    while(num) {
-        int digit = num % 10;
-        count += (digit & 1);
-        num /= 10;
+    int optimal(int num) {
+        int count = 0;
+        while(num) {
+            int digit = num % 10;
+            count += (digit & 1);
+            num /= 10;
+        }
+        return count;
     }
-    return count;
-}
 
-int countOddDigits(long long x) {
-    return optimal(x);
-}
+    int countOddDigit(int n) {
+        return optimal(n);
+    }
+};

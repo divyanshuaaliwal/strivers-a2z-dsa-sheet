@@ -1,17 +1,20 @@
-// URL: Not available
+// URL: https://takeuforward.org/practice/dsa/return-the-largest-digit-in-a-number
 
-#include <bits/stdc++.h> 
+class Solution {
+public:
 
-int optimal(long long num) {
-    int largestDigit = 0;
-    while(num) {
-        int digit = num % 10;
-        largestDigit = max(largestDigit, digit);
-        num /= 10;
+    int optimal(int num) {
+        int largestDigit = 0;
+        while(num) {
+            int digit = num % 10;
+            largestDigit = max(largestDigit, digit);
+            num /= 10;
+        }
+        return largestDigit;
     }
-    return largestDigit;
-}
 
-int LargestDigit(long long x) {
-    return optimal(x);
-}
+    int largestDigit(int n) {
+        return optimal(n);
+    }
+
+};
