@@ -1,4 +1,4 @@
-// URL: https://takeuforward.org/practice/dsa/check-if-string-is-palindrome-or-not-
+// URL: https://takeuforward.org/practice/dsa/check-if-a-number-is-prime-or-not
 
 class Solution{	
 	public:
