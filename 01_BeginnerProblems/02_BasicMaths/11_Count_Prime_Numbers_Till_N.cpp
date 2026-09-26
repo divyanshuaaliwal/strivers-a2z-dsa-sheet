@@ -1,4 +1,4 @@
-// URL: https://leetcode.com/problems/count-primes/
+// URL: https://takeuforward.org/practice/dsa/count-of-prime-numbers-till-n
 
 class Solution {
 public:
@@ -19,13 +19,14 @@ public:
 
     int bruteForce(int num) {
         int totalPrimeNumbers = 0;
-        for(int i = 2 ; i < num ; i++) {
+        for(int i = 1 ; i <= num ; i++) {
             totalPrimeNumbers += isPrime(i);
         }
         return totalPrimeNumbers;
     }
 
-    int countPrimes(int num) {
-        return bruteForce(num);
+    int primeUptoN(int n) {
+        return bruteForce(n);
     }
+
 };
