@@ -243,11 +243,13 @@ void pattern_20(int n) {
         }
         cout << endl;
     }
+
+    n = n - 1;
     for(int i = 1 ; i <= n ; i++) {
         for(int star = 1; star <= n-i+1 ; star++) {
             cout << "*";
         }
-        for(int space = 1; space <= 2*i-2 ; space++) {
+        for(int space = 1; space <= 2*i ; space++) {
             cout << " ";
         }
         for(int star = 1; star <= n-i+1 ; star++) {
