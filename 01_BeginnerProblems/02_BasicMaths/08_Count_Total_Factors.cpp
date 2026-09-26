@@ -27,7 +27,6 @@ class Solution {
         return totalFactors;       
     }
     
-  
     int countFactors(int num) {
         // return bruteForce(num);      
         return optimal(num);
