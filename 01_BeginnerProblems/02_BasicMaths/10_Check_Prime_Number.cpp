@@ -27,7 +27,6 @@ class Solution {
         return totalFactors == 2;       
     }
 
-
     bool isPrime(int num) {
         // return bruteForce(num);      
         return optimal(num);
