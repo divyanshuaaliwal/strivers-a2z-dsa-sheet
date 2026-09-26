@@ -21,7 +21,7 @@ public:
 
         string str = "";
         for(auto &p: arr) {
-            if(p.first != '\0') {
+            if(p.second > 0) {
                 str += string(p.second, p.first);
             }
         }
