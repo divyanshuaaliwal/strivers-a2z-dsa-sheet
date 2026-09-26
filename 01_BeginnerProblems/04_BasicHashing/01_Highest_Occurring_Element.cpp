@@ -1,8 +1,8 @@
-// URL: https://www.geeksforgeeks.org/problems/most-frequent-element-in-an-array/1
+// URL: https://takeuforward.org/practice/dsa/highest-occurring-element-in-an-array
 
 class Solution {
 public:
-    int mostFreqEle(vector<int>& arr) {
+    int mostFrequentElement(vector<int>& arr) {
 
         unordered_map<int, int> mpp;
 
@@ -23,7 +23,7 @@ public:
                 maxFreq = value;
             }
             else if(value == maxFreq) {
-                element = max(element, key);
+                element = min(element, key);
             }
         }
 
