@@ -45,5 +45,4 @@ class Solution {
         // return bruteforce(a, b);
         return optimal(a, b);
     }  
-
 };
